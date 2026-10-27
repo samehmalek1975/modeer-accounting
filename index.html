@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام المدير المحاسبي</title>
+    <!-- استدعاء Tailwind CSS للتصميم السريع -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 font-sans">
 
+    <div class="min-h-screen flex flex-col">
+        <!-- شريط التنقل العلوي -->
+        <header class="bg-blue-900 text-white shadow-md">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <h1 class="text-xl font-bold flex items-center gap-2">
+                    <i class="fa-solid fa-calculator"></i> نظام المدير المحاسبي
+                </h1>
+                <span class="text-sm bg-blue-800 px-3 py-1 rounded">نسخة العمل المباشر</span>
+            </div>
+        </header>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="container mx-auto px-4 py-6 flex-grow">
+            <!-- بطاقات الإحصائيات السريعة -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-white p-6 rounded-lg shadow border-r-4 border-green-500">
+                    <p class="text-gray-500 text-sm">إجمالي الإيرادات</p>
+                    <h3 class="text-2xl font-bold text-gray-800 mt-1">0.00 ر.س</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow border-r-4 border-red-500">
+                    <p class="text-gray-500 text-sm">إجمالي المصروفات</p>
+                    <h3 class="text-2xl font-bold text-gray-800 mt-1">0.00 ر.س</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow border-r-4 border-blue-500">
+                    <p class="text-gray-500 text-sm">صافي الربح</p>
+                    <h3 class="text-2xl font-bold text-gray-800 mt-1">0.00 ر.س</h3>
+                </div>
+            </div>
+
+            <!-- جدول العمليات أو القيود -->
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-bold text-gray-800">القيود اليومية والعمليات الأخيرة</h2>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-plus"></i> إضافة قيد جديد
+                    </button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-right border-collapse">
+                        <thead>
+                            <tr class="bg-gray-50 text-gray-600 border-b">
+                                <th class="p-3">رقم القيد</th>
+                                <th class="p-3">التاريخ</th>
+                                <th class="p-3">البيان</th>
+                                <th class="p-3">مدين</th>
+                                <th class="p-3">دائن</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b text-gray-500 text-center">
+                                <td colspan="5" class="py-6">لا توجد عمليات مضافة حتى الآن</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!-- تذييل الصفحة -->
+        <footer class="bg-white text-center py-4 text-gray-500 text-sm border-t">
+            جميع الحقوق محفوظة &copy; 2026 - نظام المدير المحاسبي
+        </footer>
+    </div>
+
+</body>
+</html>
